@@ -1,22 +1,23 @@
 *{
     margin:0 auto;
+
 }
 html{
-       background-color: #FBF9EF;
+       background-color: #F9f7e8;
 }
-
 .nombre{
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'Playfair Display';
     text-align: center;
     margin:70px;
+    font-weight: normal
 }
 #puntito{
     letter-spacing: 80px;
 }
 #puntitoB, #puntito{
     display: inline;
-    font-size: 50px;
+    font-size: 40px;
 }
 nav a:before, nav a:after{
     position: absolute; /*copiado*/
@@ -42,8 +43,8 @@ nav a:hover:before, nav a:hover:after{ /*copiado*/
     opacity: 1;
     transform: translateX(0px);
 }
-ul{
-	width:90%;
+nav ul{
+	width:80%;
 	height:50px;
 	margin-top:25px;
 	padding:0px;
@@ -57,7 +58,7 @@ li a{
     position: relative;/*copiado*/
 	text-decoration: none;
 	font-family: 'Poiret One', cursive;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 	color: #61bfad;
 }
@@ -65,21 +66,24 @@ i{
     letter-spacing: 15px;
 }
 
-
 #portfolio{
     width: 80%;
     display: flex;
     flex-wrap:wrap;
     margin-top: 50px;
+    display: flex;  
+    justify-content: center;
 }
-section a{
-    width:33.3%; /*el link ocupa el 30% del container "portfolio"*/
+#portfolio a{
+    width:28%; /*el link ocupa el 30% del container "portfolio"*/
+    margin:5px; /*era el margin lo que hacía que no se junten!!*/
 }
 article{
     width: 100%;/*la imagen ocupa el 100% del link, que a su vez es el 30% del contenedor*/
     height: 100%;
     position: relative;
     background:silver; /*http://jsfiddle.net/4Dfpm/*/
+    justify-content: flex-start; 
 }
 img{
     width: 100%; /*la imagen ocupa el 100% de width y height del article*/
@@ -108,7 +112,7 @@ article:hover img{
 }
 .texto {
     color: white;
-    font:  50px 'Old Standard TT',bold, sans-serif;
+    font:  45px 'Old Standard TT',bold, sans-serif;
     position: absolute;
     line-height: 50px;
     top: 80%;
@@ -116,8 +120,94 @@ article:hover img{
     transform: translate(-50%, -50%);
     text-align: center;
     opacity: 0;
-    transition: 0.5s ease-in-out;
+   transition: 0.5s ease-in-out;
 }
  article:hover .texto {
     opacity: 1;
+}
+#more{
+    width: 68.5%;
+    margin-top: 5px;
+    height: 117px;
+}
+.more{
+    top: 60%;
+    left: 50%;
+}
+#article-more{
+    background:darkgrey;
+}
+hr{
+    margin-top: 50px;
+    height: 6px;
+    background: url(img/hr.png) repeat-x 0 0;
+    border: 0; 
+}
+
+footer{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer ul{
+    /*background-color: /*#b22a47;#bea1a5; #e54b4b; eeb200 */
+    list-style-type:none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer li{
+    margin: 0;
+}
+footer li a{
+    color: black;
+    padding: 0;
+    margin:0;
+    line-height: 25px;
+}
+footer li a:hover{
+    color: #ff8b8b;
+}
+#footer-sign, .about-skills{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #61bfad;
+    text-align: center;
+}
+.about-skills{
+    width: 70%;
+    font-size: 40px;
+    text-align: left;
+    margin-top:10px;
+}
+#about-skills-text{
+    font-size: 18px;
+    font-family:  'Playfair display';
+    width: 70%;
+    color: #ff8b8b;
+}
+h2{
+    font-size: 18px;
+}
+#y{
+    font-family: arial;
+    display: inline;
+}
+#foto img{
+    width: 125px;
+    border-radius: 50%;
+}
+
+/*graphic dg*/
+#container-trabajos{
+    width: 80%;
+    display:flex;
+    flex-wrap: wrap;
+
 }
