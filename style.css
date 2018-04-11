@@ -264,5 +264,5 @@ h2{
 #container-trabajos{ /*DG*/
     width: 80%;
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
