@@ -1,6 +1,5 @@
 *{
     margin:0 auto;
-
 }
 html{
        background-color: #F9f7e8;
@@ -53,10 +52,11 @@ nav ul{
 	align-items: center;
     list-style-type:none;
 }
-li a{ 	
+li a/*, #skills-bars*/, .column li{ 	
 	padding: 10px 10px;/*copiado*/
     position: relative;/*copiado*/
 	text-decoration: none;
+    list-style-type:none;
 	font-family: 'Poiret One', cursive;
     font-size: 15px;
     font-weight: bold;
@@ -65,7 +65,6 @@ li a{
 i{
     letter-spacing: 15px;
 }
-
 #portfolio{
     width: 80%;
     display: flex;
@@ -97,7 +96,6 @@ article:hover img{
     opacity:0.2;
     transition:1s; 
 }
-
 .overlay {
     position: absolute;
     top:0; bottom: 0; left:0; right:0;
@@ -106,11 +104,10 @@ article:hover img{
     opacity: 0;
     transition: .13s ease;
 }
-
  article:hover .overlay{
     opacity: 1;
 }
-.texto {
+.texto-hover {
     color: white;
     font:  45px 'Old Standard TT',bold, sans-serif;
     position: absolute;
@@ -122,7 +119,7 @@ article:hover img{
     opacity: 0;
    transition: 0.5s ease-in-out;
 }
- article:hover .texto {
+ article:hover .texto-hover {
     opacity: 1;
 }
 #more{
@@ -142,6 +139,87 @@ hr{
     height: 6px;
     background: url(img/hr.png) repeat-x 0 0;
     border: 0; 
+}
+.about-skills, #footer-sign{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #61bfad;
+    text-align: center;
+}
+.about-skills, #about-skills-text{
+    width: 70%;
+    margin-top:25px;
+    font-size: 40px;
+    text-align: left;
+}
+#about-skills-text{
+    font-size: 18px;
+    font-family:  'Playfair display';
+    color: #61bfad;/*color: #ff8b8b;*/
+}
+.pink{
+    color: #ff8b8b;
+}
+/*#skills-bars{
+    list-style-type:none;
+    margin-top: 15px;
+
+}
+#skills-bars li {
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+#skills-bars li div{
+    width: 500px;
+}*/
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 8px;
+}
+.right{
+    width: 18%;
+}
+.column li{
+    color: #ff8b8b;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;/*  borrar el float despues de las columnas */
+}
+.row{
+    width: 80%;
+    margin-top: 25px;
+}
+
+/*mark{
+    color: #ff8b8b;
+    background-color: #F9f7e8;
+    width: 1000px;
+}*/
+
+span{
+    height: 11px;
+    width: 11px;
+    border: 2px solid #ff8b8b;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0px 0px 0px 9px;
+    text-align: center;
+    background-color:#ff8b8b ;
+    color: white;
+    border-radius: 50%;
+}
+
+#span-empty{
+    background-color: #F9f7e8;
 }
 
 footer{
@@ -173,25 +251,6 @@ footer li a{
 footer li a:hover{
     color: #ff8b8b;
 }
-#footer-sign, .about-skills{
-    font-family: 'Poiret One', cursive;
-    font-size: 30px;
-    font-weight: bold;
-    color: #61bfad;
-    text-align: center;
-}
-.about-skills{
-    width: 70%;
-    font-size: 40px;
-    text-align: left;
-    margin-top:10px;
-}
-#about-skills-text{
-    font-size: 18px;
-    font-family:  'Playfair display';
-    width: 70%;
-    color: #ff8b8b;
-}
 h2{
     font-size: 18px;
 }
@@ -204,10 +263,15 @@ h2{
     border-radius: 50%;
 }
 
-/*graphic dg*/
+
+
 #container-trabajos{
     width: 80%;
     display:flex;
     flex-wrap: wrap;
+}
+#skills-bars{
+    width: 70%;
+}
 
 }
