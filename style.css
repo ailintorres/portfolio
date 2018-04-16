@@ -43,7 +43,7 @@ nav a:hover:before, nav a:hover:after{ /*copiado*/
     transform: translateX(0px);
 }
 nav ul{
-	width:80%;
+	width:75%;
 	height:50px;
 	margin-top:25px;
 	padding:0px;
@@ -176,6 +176,7 @@ hr{
 }
 .right{
     width: 25%;
+    min-width: 110px;
 }
 .column li{
     color: #ff8b8b;
@@ -183,7 +184,9 @@ hr{
     letter-spacing: 1px;
     padding:0;
     padding-top: 10px;
+    min-width: 120px;
 }
+
 .row:after {
     content: "";
     display: table;
@@ -192,6 +195,7 @@ hr{
 .row{
     width: 67.2%;
     margin-top: 25px;
+    min-width: 230px;
 }
 
 /*mark{
@@ -260,9 +264,150 @@ h2{
 }
 
 
-
-#container-trabajos{ /*DG*/
+/*
+#container-trabajos{ DG
     width: 80%;
     display:flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+}*/
+
+
+#photos {
+  /* Prevent vertical gaps */
+  /*https://css-tricks.com/seamless-responsive-photo-grid/*/
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    4;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           0px; 
+  width: 80%; 
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  margin:10px;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+
+/**/
+.popup {
+    display: none;
+    position: absolute;
+    padding: 10px 35px 20px 20px;
+    width: 40%;
+    left: 25%;
+    right: 25%;
+    top: 20%;
+    background: #FFF;
+    z-index: 20;
+    text-align: right;
+}
+
+.popup img{
+    padding-top:10px;
+}
+.popup::before  {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    z-index: -1;
+}
+
+.popup::after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: -2;
+}
+button{
+    background: #61bfad;
+    background-image: linear-gradient(#bababa, #ababab);
+    border-radius: 28px;
+    border:none;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+button:hover {
+    background: #bababa;
+    background-image: linear-gradient( #61bfad, #6dd1bd);
+    text-decoration: none;
+}
+
+
+
+.cd-nugget-info {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  top: 0;
+  left: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-nugget-info a {
+  position: relative;
+  font-size: 14px;
+  color: #e86256;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.cd-nugget-info a:hover {
+  opacity: .8;
+}
+.cd-nugget-info span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.cd-nugget-info span svg {
+  display: block;
+}
+.cd-nugget-info .cd-nugget-info-arrow {
+  fill: #e86256;
 }
