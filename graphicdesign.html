@@ -5,7 +5,8 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="a.ico">
-		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Playfair+Display|Old+Standard+TT" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Old+Standard+TT" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style-arrow.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title> Ailin Torres </title>
 	</head>
@@ -14,14 +15,14 @@
 		<nav>
 			<ul>
 				<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME </a></li>
-				<li><a href="#about"><i class="fa fa-female" aria-hidden="true"></i> ABOUT </a></li>
-				<li><a href="#portfolio"><i class="fa fa-book" aria-hidden="true"></i>PORTFOLIO</a></li>
-				<li><a href="#skills"><i class="fa fa-gears aria-hidden="true"></i> SKILLS</a></li>
-				<li><a href="#contact"><i class="fa fa-link" aria-hidden="true"></i> CONTACT</a></li>
+				<li><a href="index.html#about"><i class="fa fa-female" aria-hidden="true"></i> ABOUT </a></li>
+				<li><a href="index.html#portfolio"><i class="fa fa-book" aria-hidden="true"></i>PORTFOLIO</a></li>
+				<li><a href="index.html#skills"><i class="fa fa-gears aria-hidden="true"></i> SKILLS</a></li>
+				<li><a href="contact.html"><i class="fa fa-link" aria-hidden="true"></i> CONTACT</a></li>
 			</ul>
 		</nav>
 		<!--<div id="container-trabajos">
-					<img src="">
+						<img src="">
 		</div>-->
 		<section id="photos">
 			<a href="#" onclick="showHide(event,'uno')"><img src="im/dg/babyshower.png" alt="babyshower"></a>
@@ -38,91 +39,82 @@
 			</div>
 			<a href="#" onclick="showHide(event,'cuatro')"><img src="im/dg/casamiento.jpg" alt="invitacion casamiento"> </a>
 			<div class="popup" id="cuatro">
-				<a href="#"><button>x</button><img src="im/dg/casamiento.jpg" alt="invitacion casamiento"></a>
+				<a href="#"><button>x</button><img src="im/dg/casamiento.jpg"></a>
 			</div>
 			<a href="#" onclick="showHide(event,'cinco')"><img src="im/dg/curapa.png" alt="logo cerveza"></a>
 			<div class="popup" id="cinco">
-				<a href="#"><button>x</button><img src="im/dg/curapa.png" alt="logo cerveza"></a>
+				<a href="#"><button>x</button><img src="im/dg/curapa.png"></a>
 			</div>
 			<a href="#" onclick="showHide(event,'seis')"><img src="im/dg/flyer.jpg" alt="flyer banda"></a>
 			<div class="popup" id="seis">
-				<a href="#"><button>x</button><img src="im/dg/flyer.jpg" alt="flyer banda"></a>
+				<a href="#"><button>x</button><img src="im/dg/flyer.jpg"></a>
 			</div>
 			<a href="#" onclick="showHide(event,'siete')"><img src="im/dg/Cumpleanos60.png" alt="cumpleaños 60 logo"></a>
 			<div class="popup" id="siete">
-				<a href="#"><button>x</button><img src="im/dg/Cumpleanos60.png" alt="cumpleaños 60 logo"></a>
+				<a href="#"><button>x</button><img src="im/dg/Cumpleanos60.png"></a>
 			</div>
 			<a href="#" onclick="showHide(event,'ocho')"><img src="im/dg/curapa-sketch.png" alt="logo cerveza" style="background-color: white;"></a>
 			<div class="popup" id="ocho">
-				<a href="#"><button>x</button><img src="im/dg/curapa-sketch.png" alt="logo cerveza"></a>
+				<a href="#"><button>x</button><img src="im/dg/curapa-sketch.png" ></a>
 			</div>
 			<a href="#" onclick="showHide(event,'nueve')"><img src="im/dg/invitacion-cumpleanos.png" alt="invitacion-cumpleanos"></a>
 			<div class="popup" id="nueve">
-				<a href="#"><button>x</button><img src="im/dg/invitacion-cumpleanos.png" alt="invitacion-cumpleanos"></a>
+				<a href="#"><button>x</button><img src="im/dg/invitacion-cumpleanos.png"></a>
 			</div>
-
 			<a href="#" onclick="showHide(event,'diez')"><img src="im/dg/CuentoIlustrado-M-Spector.png" alt="CuentoIlustrado-M-Spector"></a>
 			<div class="popup" id="diez">
-				<a href="#"><button>x</button><img src="im/dg/CuentoIlustrado-M-Spector.png" alt="CuentoIlustrado-M-Spector"></a>
+				<a href="#"><button>x</button><img src="im/dg/CuentoIlustrado-M-Spector.png"></a>
 			</div>
-
 			<a href="#" onclick="showHide(event,'once')"><img src="im/dg/logo-audiovisual.png" alt="logo-audiovisual"></a>
 			<div class="popup" id="once">
-				<a href="#"><button>x</button><img src="im/dg/logo-audiovisual.png" alt="logo-audiovisual"></a>
+				<a href="#"><button>x</button><img src="im/dg/logo-audiovisual.png"></a>
 			</div>
-
 			<a href="#" onclick="showHide(event,'doce')"><img src="im/dg/localropa.jpg" alt="localropa"></a>
 			<div class="popup" id="doce">
-				<a href="#"><button>x</button><img src="im/dg/localropa.jpg" alt="localropa"></a>
+				<a href="#"><button>x</button><img src="im/dg/localropa.jpg"></a>
 			</div>
-
 			<a href="#" onclick="showHide(event,'trece')"><img src="im/dg/tarjetitas-02.jpg" alt="localropa"></a>
 			<div class="popup" id="trece">
-				<a href="#"><button>x</button><img src="im/dg/tarjetitas-02.jpg" alt="tarjetitas-02"></a>
+				<a href="#"><button>x</button><img src="im/dg/tarjetitas-02.jpg"></a>
 			</div>
-
 			<a href="#" onclick="showHide(event,'catorce')"><img src="im/dg/tarjetas-curvas-02.jpg" alt="localropa"></a>
 			<div class="popup" id="catorce">
-				<a href="#"><button>x</button><img src="im/dg/tarjetas-curvas-02.jpg" alt="tarjetas curvas-02"></a>
+				<a href="#"><button>x</button><img src="im/dg/tarjetas-curvas-02.jpg"></a>
 			</div>
-
-			<a href="#" onclick="showHide(event,'quince')"><img src="im/dg/banner-local.png" alt="localropa"></a>
+			<a href="#" onclick="showHide(event,'quince')"><img src="im/dg/Calendario-01.png" alt="Calendario"></a>
 			<div class="popup" id="quince">
-				<a href="#"><button>x</button><img src="im/dg/banner-local.png" alt="banner-local"></a>
+				<a href="#"><button>x</button><img src="im/dg/Calendario-01.png"><img src="im/dg/Calendario-02b.png"><img src="im/dg/calendario-03b.png"></a>
 			</div>
-
+			<a href="#" onclick="showHide(event,'dieciseis')"><img src="im/dg/Showroom-mailing.png" alt="showroom mailing"></a>
+			<div class="popup" id="dieciseis">
+				<a href="#"><button>x</button><img src="im/dg/Showroom-mailing.png"></a>
+			</div>
+			<a href="#" onclick="showHide(event,'diecisiete')"><img src="im/dg/babyshower2.jpg" alt="babyshower"></a>
+			<div class="popup" id="diecisiete">
+				<a href="#"><button>x</button><img src="im/dg/babyshower2.jpg" alt="tarjetas curvas-02"></a>
+			</div>
 		</section>
-
-<script type="text/javascript">
-
-	var getElement = function(id) {
-		return document.getElementById(id);
-	}
-
-	var showHide = function(event, id) {
-	
-		getElement(id).style.display ='block';
-		event.stopPropagation();
-	
-		//http://jsfiddle.net/S5ftb/
-		$( document ).on( 'keydown', function ( e ) {
-	   		if ( e.keyCode === 27 ) {
-	    		getElement(id).style.display ='none';
-	   		}
-		});
-		
-		$( document ).on( 'click', function ( e ) {
-			getElement(id).style.display ='none';
-	      	 if ( $( e.target ).closest(getElement(id)).length !=0.5) {
-	      	   
-	      	 }
-
-	    });
-
-	}
-
-</script>
-
+		<script type="text/javascript">
+			var getElement = function(id) {
+				return document.getElementById(id);
+			}
+			var showHide = function(event, id) {
+				getElement(id).style.display ='block';
+				event.stopPropagation();
+			
+				//http://jsfiddle.net/S5ftb/
+				$( document ).on( 'keydown', function ( e ) {
+					if ( e.keyCode === 27 ) {
+					getElement(id).style.display ='none';
+					}
+				});
+				$( document ).on( 'click', function ( e ) {
+					getElement(id).style.display ='none';
+				if ( $( e.target ).closest(getElement(id)).length !=0.5) {
+				}
+			});
+			}
+		</script>
 		<hr>
 		<footer>
 			<ul>
@@ -138,6 +130,7 @@
 				<img src="cv3.png">
 			</div>
 		</footer>
-
+	<a href="#0" class="cd-top js-cd-top">Top</a>
+	<script src="js/main.js"></script> 
 	</body>
 </html>

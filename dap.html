@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="a.ico">
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Old+Standard+TT" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style-arrow.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title> Ailin Torres </title>
+	</head>
+	<body>
+		<h1 class="nombre"> <p id="puntito" >•</p> AILIN TORRES<p id="puntito"> </p><p id="puntitoB">•</p> </h1>
+		<nav>
+			<ul>
+				<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME </a></li>
+				<li><a href="index.html#about"><i class="fa fa-female" aria-hidden="true"></i> ABOUT </a></li>
+				<li><a href="index.html#portfolio"><i class="fa fa-book" aria-hidden="true"></i>PORTFOLIO</a></li>
+				<li><a href="index.html#skills"><i class="fa fa-gears aria-hidden="true"></i> SKILLS</a></li>
+				<li><a href="contact.html"><i class="fa fa-link" aria-hidden="true"></i> CONTACT</a></li>
+			</ul>
+		</nav>
+		<!--<div id="container-trabajos">
+						<img src="">
+		</div>-->
+		<section id="photos">
+			<a href="#" onclick="showHide(event,'uno')"><img src="im/ads/LG-Vecinos1.png" alt="babyshower"></a>
+			<div class="popup" id="uno">
+				<div><button>x</button><img src="im/ads/LG-Vecinos1.png"></div>
+			</div>
+			<a href="#" onclick="showHide(event,'dos')"><img src="im/ads/PB-Carpeta.png" alt="adaptacion"></a>
+			<div class="popup" id="dos">
+				<div><button>x</button><img src="im/ads/PB-Carpeta.png"></div>
+			</div>
+			<a href="#" onclick="showHide(event,'tres')"><img src="im/ads/LG-Vecinos2.png" alt="invitacion casamiento"> </a>
+			<div class="popup" id="tres">
+				<a href="#"><button>x</button><img src="im/ads/LG-Vecinos2.png"></a>
+			</div>
+			<a href="#" onclick="showHide(event,'cuatro')"><img src="im/ads/CruzRoja-Tardasmenos.png" alt="logo cerveza"></a>
+			<div class="popup" id="cuatro">
+				<a href="#"><button>x</button><img src="im/ads/CruzRoja-Tardasmenos.png"></a>
+			</div>
+			<a href="#" onclick="showHide(event,'cinco')"><img src="im/ads/BuenosModales-Delantera.png" alt="adaptacion"></a>
+			<div class="popup" id="cinco">
+				<div><button>x</button><img src="im/ads/BuenosModales-Delantera.png""></div>
+			</div>
+			<a href="#" onclick="showHide(event,'seis')"><img src="im/ads/LG-Vecinos3.png" alt="cumpleaños 60 logo"></a>
+			<div class="popup" id="seis">
+				<a href="#"><button>x</button><img src="im/ads/LG-Vecinos3.png"></a>
+			</div>
+
+			<a href="#" onclick="showHide(event,'siete')"><img src="im/ads/LoJack-BackUp.png" alt="logo cerveza" style="background-color: white;"></a>
+			<div class="popup" id="siete" style="width: 65%;left: 10%; right: 10%; top:15%;">
+				<a href="#"><button>x</button><img src="im/ads/LoJack-BackUp.png"></a>
+			</div>
+
+			<a href="#" onclick="showHide(event,'ocho')"><img src="im/ads/BuenosModales-retaguardia.png" alt="flyer banda"></a>
+			<div class="popup" id="ocho">
+				<a href="#"><button>x</button><img src="im/ads/BuenosModales-retaguardia.png"></a>
+			</div>
+
+
+			<a href="#" onclick="showHide(event,'nueve')"><img src="im/ads/Ebay-Eshora.png" alt="invitacion-cumpleanos"></a>
+			<div class="popup" id="nueve">
+				<a href="#"><button>x</button><img src="im/ads/Ebay-Eshora.png"></a>
+			</div>
+			<a href="#" onclick="showHide(event,'diez')"><img src="im/ads/SushiPop-TecnologiaJaponesa.png" alt="CuentoIlustrado-M-Spector"></a>
+			<div class="popup" id="diez">
+				<a href="#"><button>x</button><img src="im/ads/SushiPop-TecnologiaJaponesa.png"></a>
+			</div>
+		
+
+
+<!-- 
+LG-Vecinos1.jpg
+PB-Carpeta.jpg
+BuenosModales-Delantera.jpg
+LG-Vecinos2.jpg
+CruzRoja-Tardasmenos.jpg
+BuenosModales-retaguardia.jpg 
+LG-Vecinos3.jpg
+LoJack-BackUp.jpg
+Ebay-Eshora.jpg
+SushiPop-Tecnologia.jpg -->
+
+
+		</section>
+		<script type="text/javascript">
+			var getElement = function(id) {
+				return document.getElementById(id);
+			}
+			var showHide = function(event, id) {
+				getElement(id).style.display ='block';
+				event.stopPropagation();
+			
+				//http://jsfiddle.net/S5ftb/
+				$( document ).on( 'keydown', function ( e ) {
+					if ( e.keyCode === 27 ) {
+					getElement(id).style.display ='none';
+					}
+				});
+				$( document ).on( 'click', function ( e ) {
+					getElement(id).style.display ='none';
+				if ( $( e.target ).closest(getElement(id)).length !=0.5) {
+				}
+			});
+			}
+		</script>
+		<hr>
+		<footer>
+			<ul>
+				<li><a href="index.html">// HOME </a></li>
+				<li><a href="#portfolio">// PORTFOLIO</a></li>
+				<li><a href="#contact">// CONTACT</a></li>
+			</ul>
+			<div id="footer-sign">
+				<h3>AILIN TORRES</h3>
+				<h2>WEB <p id="y">&</p> GRAPHIC DESIGNER</h2>
+			</div>
+			<div id="foto">
+				<img src="cv3.png">
+			</div>
+		</footer>
+	<a href="#0" class="cd-top js-cd-top">Top</a>
+	<script src="js/main.js"></script> 
+	</body>
+</html>
