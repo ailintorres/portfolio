@@ -161,7 +161,7 @@ hr{
     background: url(img/hr.png) repeat-x 0 0;
     border: 0; 
 }
-.about-skills, #footer-sign{
+.about-skills, #footer-sign, #web{
     font-family: 'Poiret One', cursive;
     font-size: 30px;
     font-weight: bold;
@@ -175,7 +175,7 @@ hr{
     font-size: 40px;
     text-align: left;
 }
-#about-skills-text{
+#about-skills-text, #disenoweb{
     font-size: 1.75vw;
     font-family:  'Tajawal';
     color: #61bfad;/*color: #ff8b8b;*/
@@ -186,6 +186,13 @@ hr{
     font-size: 12px;
     line-height: 12px;
     }
+}
+#about-skills-text a{
+    color:black;
+    text-decoration: none;
+}
+#about-skills-text a:hover, #disenoweb a:hover{
+    color: #EECD65;
 }
 .pink{
     color: #ff8b8b;
@@ -311,8 +318,8 @@ footer ul li{
 }
 
 #photos img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
+  /* por si hay atributos inline */
+  width: 95% !important;
   height: auto !important;
   margin:10px;
 }
@@ -411,7 +418,7 @@ button:hover {
 
 #data{
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 #data, #data a{
     text-align: center;
@@ -420,7 +427,7 @@ button:hover {
     color:#ff8b8b;
     font-weight: bold;
     letter-spacing: 1.5px;
-    line-height: 50px;
+    line-height: 80px;
     text-decoration: none;
     display: block;
 }
