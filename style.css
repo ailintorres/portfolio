@@ -176,10 +176,10 @@ hr{
     text-align: left;
 }
 #about-skills-text, #disenoweb{
-    font-size: 1.75vw;
+    font-size: 1.4vw;
     font-family:  'Tajawal';
     color: #61bfad;/*color: #ff8b8b;*/
-    line-height: 2.4vw;
+    line-height: 2vw;
 }
 @media (max-width: 750px) {
     #about-skills-text{
