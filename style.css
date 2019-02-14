@@ -319,9 +319,13 @@ footer ul li{
 
 #photos img {
   /* por si hay atributos inline */
-  width: 95% !important;
+  width: 75% !important;
   height: auto !important;
-  margin:10px;
+  margin:10px 10px 35px 10px;
+}
+#photos #img-popup{
+    width: 95% !important;
+    margin:10px;
 }
 
 @media (max-width: 1200px) {
@@ -358,7 +362,7 @@ footer ul li{
 .popup {
     display: none;
     position: absolute;
-    padding: 10px 35px 20px 20px;
+    padding: 10px 35px 20px 25px;
     width: 40%;
     left: 25%;
     right: 25%;
@@ -366,6 +370,7 @@ footer ul li{
     background: #FFF;
     z-index: 20;
     text-align: right;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.7)
 }
 
 .popup img{

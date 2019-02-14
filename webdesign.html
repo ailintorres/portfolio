@@ -21,17 +21,89 @@
 				<li><a href="contact.html"><i class="fa fa-link" aria-hidden="true"></i> CONTACT</a></li>
 			</ul>
 		</nav>
-		<div style="width: 70%">
+		<section id="photos">
+			<a href="#" onclick="showHide(event,'uno')"><img src="im/wdesign/bitcoineta.jpg" alt="WEB Bitcoin Argentina"></a>
+			<div class="popup" id="uno">
+				<div><button>x</button><img id="img-popup" src="im/wdesign/bitcoineta.jpg"></div>
+			</div>
+			<a href="#" onclick="showHide(event,'dos')"><img src="im/wdesign/fiambrerialatablita.jpg" alt="Web La Tablita"></a>
+			<div class="popup" id="dos">
+				<div><button>x</button><img id="img-popup" src="im/wdesign/fiambrerialatablita.jpg"></div>
+			</div>
+			<a href="#" onclick="showHide(event,'tres')"><img src="im/wdesign/barrancasdeleste.jpg" alt="Web hotel barrancas"> </a>
+			<div class="popup" id="tres">
+				<a href="#"><button>x</button><img id="img-popup" src="im/wdesign/barrancasdeleste.jpg"></a>
+			</div>
+			<a href="#" onclick="showHide(event,'cuatro')"><img src="im/wdesign/consult-ar.jpg" alt="News mensual"></a>
+			<div class="popup" id="cuatro">
+				<a href="#"><button>x</button><img id="img-popup" src="im/wdesign/consult-ar.jpg"></a>
+			</div>
+			<a href="#" onclick="showHide(event,'cinco')"><img src="im/wdesign/ssl.jpg" alt="News ssl"></a>
+			<div class="popup" id="cinco">
+				<div><button>x</button><img id="img-popup" src="im/wdesign/ssl.jpg""></div>
+			</div>
+			<a href="#" onclick="showHide(event,'seis')"><img src="im/wdesign/latablita.jpg" alt="News mensual"></a>
+			<div class="popup" id="seis">
+				<a href="#"><button>x</button><img id="img-popup" src="im/wdesign/latablita.jpg"></a>
+			</div>
+
+			<a href="#" onclick="showHide(event,'siete')"><img src="im/wdesign/orbital.jpg" alt="Landing Orbital" style="background-color: white;"></a>
+			<div class="popup" id="siete" style="width: 65%;left: 10%; right: 10%; top:15%;">
+				<a href="#"><button>x</button><img id="img-popup" src="im/wdesign/orbital.jpg"></a>
+			</div>
+
+			<a href="#" onclick="showHide(event,'ocho')"><img src="im/wdesign/campbell.jpg" alt="Buenos Modales- LN"></a>
+			<div class="popup" id="ocho">
+				<a href="#"><button>x</button><img id="img-popup" src="im/wdesign/campbell.jpg"></a>
+			</div>
+
+
+			<a href="#" onclick="showHide(event,'nueve')"><img src="im/wdesign/minprod.jpg" alt="Landing Ministerio produccion"></a>
+			<div class="popup" id="nueve">
+				<a href="#"><button>x</button><img id="img-popup" src="im/wdesign/minprod.jpg"></a>
+			</div>
+			<a href="#" onclick="showHide(event,'diez')"><img src="im/wdesign/latablita2.jpg" alt="News mensual La Tablita"></a>
+			<div class="popup" id="diez">
+				<a href="#"><button>x</button><img id="img-popup" src="im/wdesign/latablita2.jpg"></a>
+			</div>
+			<a href="#" onclick="showHide(event,'once')"><img src="im/wdesign/vuelosyvacaciones.jpg" alt="News mensual Vuelos"></a>
+			<div class="popup" id="once">
+				<a href="#"><button>x</button><img id="img-popup" src="im/wdesign/vuelosyvacaciones.jpg"></a>
+			</div>
+
+		</section>
+		<script type="text/javascript">
+			var getElement = function(id) {
+				return document.getElementById(id);
+			}
+			var showHide = function(event, id) {
+				getElement(id).style.display ='block';
+				event.stopPropagation();
+			
+				//http://jsfiddle.net/S5ftb/
+				$( document ).on( 'keydown', function ( e ) {
+					if ( e.keyCode === 27 ) {
+					getElement(id).style.display ='none';
+					}
+				});
+				$( document ).on( 'click', function ( e ) {
+					getElement(id).style.display ='none';
+				if ( $( e.target ).closest(getElement(id)).length !=0.5) {
+				}
+			});
+			}
+		</script>
+<!-- 		<div style="width: 70%">
 			<p id="web" style="text-align: left; margin-top:50px; margin-bottom: 25px;color: #ff8b8b; "></p>
 			<p id="disenoweb" style="margin-bottom:25px;color: gray; width: 100%;">
-<!-- 				Ésta es mi primer página, te invito a que la recorras! <br>
+				Ésta es mi primer página, te invito a que la recorras! <br>
 				Actualmente estoy trabajando en un proyecto junto a un Programador Web haciendo la página completa de una Pyme, 	donde también me encargo de la imagen corporativa. <br>
 				Proximamente la estaré subiendo a esta sección. Mientras tanto, hay mas trabajos por ver en las otras dos 	categorias. <br>
-				Gracias!<br> -->
+				Gracias!<br>
 				<a href="index.html" id="web" style="text-decoration: none; width: 70%; margin-top: 50px;"><br>Volver</a>
 			</p>
 
-		</div>
+		</div> -->
 		<hr>
 		<footer>
 			<ul>
@@ -44,7 +116,7 @@
 				<h2>WEB <p id="y">&</p> GRAPHIC DESIGNER</h2>
 			</div>
 			<div id="foto">
-				<img src="cv3.png">
+				<img src="cv3.jpg">
 			</div>
 		</footer>
 
